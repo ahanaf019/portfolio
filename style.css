@@ -1,0 +1,89 @@
+
+
+h1{
+    color:rgb(237, 148, 85);
+    /* border: 1pt solid black; */
+    font-size: 35pt;
+}
+
+h4{
+    /* border: 1pt solid black; */
+    padding: 0;
+    font-size: x-large;
+}
+
+
+
+body {
+    background-image: url('https://c4.wallpaperflare.com/wallpaper/475/439/815/stains-light-dark-background-wallpaper-preview.jpg');
+    color: #FFEC9E;
+    /* background-repeat: repeat; */
+    background-size: cover;
+    font-family:sans-serif;
+    padding-left: 10pt;
+    padding-right: 10pt;
+}
+
+.title-div{
+    padding-top: 1.5cm;
+    line-height: 2pt;
+    padding-bottom: 1cm;
+    width: 40cm;
+}
+
+
+.pro-pic{
+    border-radius: 20pt;
+
+}
+
+.main-section{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    max-width: 40cm;
+    min-width: 25cm;
+}
+
+.paragraph{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    font-size: large;
+    padding: 10pt;
+}
+
+.container {
+    /* border: 1pt solid black; */
+    display: flex;
+    padding: 10pt;
+    flex-direction: row;
+    width: 15cm;
+    /* height: 7cm; */
+    flex-wrap: wrap;
+}
+
+href{
+    color: #FFEC9E;
+    
+}
+
+.contact-div{
+    max-width: 40cm;
+    min-width: 25cm;
+    text-align: center;
+    padding-top: 1cm;
+}
+
+div{
+    /* border: 1pt solid  white; */
+    margin: auto;
+}
+
+.contact-item{
+    width: 1.5cm;
+    /* border: 1pt solid black; */
+    padding-left: 15pt;
+}
+
+/* grid, flexbox, mobile-view/desktop-view, positioning: absolute etc, box: borderbox etc */
