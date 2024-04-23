@@ -9,11 +9,10 @@
     <body>
         <div class="navbar-background">
             <div class="navbar">
-
-                
                 <div class="navbar-item-container">
                     <a class="navbar-item" href="index.html">Contact</a>
                 </div>
+
                 <div class="navbar-item-container">
                     <a class="navbar-item" href="index.html">Achievements</a>
                 </div>
@@ -71,10 +70,7 @@
 
 
         <div class="contact-div">
-            <div class="section-div">
-                <h2>Contact</h2>
-
-            </div>
+            <h2>Contact</h2>
             <div class="container">
                 <div class="contact-item">
                     <a href="mailto:ahanaf019@gmail.com"><img src="https://cdn-icons-png.flaticon.com/512/281/281769.png" width="25"></a>
@@ -99,13 +95,14 @@
             </div>
 
         </div>
-        
+
         <div class="footer">
             <div class="copyright">
                 © 2024 Md. Ahanaf Arif Khan. All rights reserved.
             </div>
         </div>
-    
+
+
     </body>
     
 </html>
