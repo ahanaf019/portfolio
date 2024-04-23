@@ -1,8 +1,94 @@
+/* :root{
+    --color1: #FFFBDA;
+    --color2: #FFEC9E;
+    --color3: #FFBB70;
+    --color4: #ED9455;
 
+} */
+
+:root{
+    --color1: #E1F7F5;
+    --color2: #9AC8CD;
+    --color3: #0E46A3;
+    --color4: #1E0342;
+    --font-family: 'monospace';
+    --max_width: 40cm;
+    --min_width: 30cm;
+
+}
+
+.navbar-background{
+    background-color: var(--color3);
+    min-width: var(--min_width);
+}
+
+
+.navbar{
+    line-height: normal;
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    height: 2.2cm;
+    max-width: var(--max_width);
+    min-width: var(--min_width);
+    align-self: center;
+}
+
+.navbar-item-container{
+    margin: 0;
+    width: auto;
+    padding-left: 15pt;
+    padding-right: 15pt;
+    margin-top: auto;
+    margin-bottom: auto;
+    /* width: 3cm; */
+}
+
+.navbar-item{
+    color: var(--color4);
+    font-size: 20pt;
+    font-weight: bold;
+    color: white;
+    /* text-shadow: 2px 2px var(--color4); */
+    text-decoration: none;
+}
+
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: var(--color2);
+}
+
+/* selected link */
+a:active {
+    color: var(--color4);
+}
+
+
+
+div{
+    /* border: 1pt solid  black; */
+    margin: auto;
+}
+
+h2{
+    color: var(--color4)
+}
 
 h1{
-    color:rgb(237, 148, 85);
+    color:var(--color4);
     /* border: 1pt solid black; */
+    font-weight: bolder;
+    text-shadow: 2px 2px var(--color2);
     font-size: 35pt;
 }
 
@@ -12,28 +98,42 @@ h4{
     font-size: x-large;
 }
 
-
-
 body {
-    background-image: url('https://c4.wallpaperflare.com/wallpaper/475/439/815/stains-light-dark-background-wallpaper-preview.jpg');
-    color: #FFEC9E;
-    /* background-repeat: repeat; */
+    color: var(--color3);
+    background-color: var(--color1);
     background-size: cover;
-    font-family:sans-serif;
-    padding-left: 10pt;
-    padding-right: 10pt;
+    font-family:var(--font-family);
+    padding: 0;
+    margin: 0;
 }
 
+.tagline {
+    color: var(--color3);
+    line-height: 20pt;
+
+}
+
+.section-div{
+    text-align: center;
+    width: auto;
+    max-width: var(--max_width);
+    min-width: var(--min_width);
+}
+
+
 .title-div{
-    padding-top: 1.5cm;
+    padding-top: 0.2cm;
     line-height: 2pt;
     padding-bottom: 1cm;
-    width: 40cm;
+    max-width: var(--max_width);
+    min-width: var(--min_width);
 }
 
 
 .pro-pic{
-    border-radius: 20pt;
+    border-radius: 50pt;
+    width: auto;
+    max-width: 10cm;
 
 }
 
@@ -41,8 +141,8 @@ body {
     display: flex;
     flex-direction: row;
     width: auto;
-    max-width: 40cm;
-    min-width: 25cm;
+    max-width: var(--max_width);
+    min-width: var(--min_width);
 }
 
 .paragraph{
@@ -51,6 +151,8 @@ body {
     text-align: justify;
     font-size: large;
     padding: 10pt;
+    /* height: 40cm; */
+
 }
 
 .container {
@@ -63,22 +165,15 @@ body {
     flex-wrap: wrap;
 }
 
-href{
-    color: #FFEC9E;
-    
-}
 
 .contact-div{
-    max-width: 40cm;
-    min-width: 25cm;
+    max-width: var(--max_width);
+    min-width: var(--min_width);
     text-align: center;
     padding-top: 1cm;
 }
 
-div{
-    /* border: 1pt solid  white; */
-    margin: auto;
-}
+
 
 .contact-item{
     width: 1.5cm;
