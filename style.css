@@ -306,10 +306,55 @@ h2{
     color: var(--color4);
     flex-grow: 1;
     flex-basis: 0;
+}
 
+.award-image {
+    border-radius: 20pt;
+    padding: 10pt;
+    /* width: 350px; */
+    height: 150px;
+}
+
+.skill-image {
+    border-radius: 20pt;
+    padding: 10pt;
+    width: 120px;
+    /* height: 150px; */
+}
+
+.skill-section{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    flex-wrap: wrap;
+    max-width: var(--max_width);
+    min-width: var(--min_width);
+}
+
+.skill-div{
+    display: flex;
+
+    flex-basis: 0;
+    width: auto;
 
 }
 
+.skill-cols{
+    display: flex;
+    flex-direction: column;
+    padding-left: 5pt;
+    flex-grow: 1;
+    flex-basis: 0;
+    align-items: flex-start;
+}
+
+.skill-item{
+    display: flex;
+    flex-direction: row;
+    width: 12cm;
+    /* max-width: var(--edu_max_width);
+    min-width: var(--edu_min_width); */
+}
 
 .paragraph{
     display: flex;
