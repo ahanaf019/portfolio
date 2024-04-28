@@ -16,6 +16,8 @@
     --min_width: 30cm;
     --home_max_width: 30cm;
     --home_min_width: 27cm;
+    --edu_max_width: 30cm;
+    --edu_min_width: 19cm;
 
 }
 
@@ -80,7 +82,7 @@
 .navbar-item-container{
     margin: 0;
     width: auto;
-    padding-left: 15pt;
+    padding-left: 20pt;
     padding-right: 15pt;
     margin-top: auto;
     margin-bottom: auto;
@@ -242,6 +244,73 @@ h2{
     min-width: var(--min_width);
 }
 
+.education-section{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    max-width: var(--max_width);
+    min-width: var(--min_width);
+}
+
+.edu-item{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    max-width: var(--edu_max_width);
+    min-width: var(--edu_min_width);
+}
+
+.edu-image {
+    border-radius: 20pt;
+    padding: 10pt;
+    width: 350px;
+}
+
+.edu-degree{
+    display: flex;
+    /* margin: 0; */
+    /* flex-grow: 1; */
+    flex-basis: 0;
+    width: auto;
+    max-width: var(--edu_max_width);
+    min-width: var(--edu_min_width);
+}
+
+.edu-col{
+    align-self: flex-start;
+    margin: 0;
+    padding: 2pt;
+}
+
+.edu-group{
+    font-size: large;
+    font-weight: bolder;
+}
+
+.edu-cols{
+    display: flex;
+    flex-direction: column;
+    padding-left: 5pt;
+    max-width: var(--edu_max_width);
+    min-width: var(--edu_min_width);
+    align-items: flex-start;
+}
+
+.edu-location{
+    display: flex;
+    
+}
+
+.edu-title{
+    font-size: x-large;
+    color: var(--color4);
+    flex-grow: 1;
+    flex-basis: 0;
+
+
+}
+
+
 .paragraph{
     display: flex;
     flex-direction: column;
@@ -262,6 +331,17 @@ h2{
     flex-wrap: wrap;
 }
 
+.home-container {
+    /* border: 1pt solid black; */
+    display: flex;
+    padding: 10pt;
+    flex-direction: row;
+    width: 15cm;
+    /* height: 7cm; */
+    flex-wrap: wrap;
+    margin-left: 0;
+}
+
 
 .contact-div{
     max-width: var(--max_width);
@@ -273,7 +353,7 @@ h2{
 .home-contact-div{
     max-width: var(--max_width);
     /* min-width: var(--min_width); */
-    text-align: center;
+    text-align: left;
     padding-top: 0cm;
 }
 
