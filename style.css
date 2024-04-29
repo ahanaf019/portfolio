@@ -24,6 +24,7 @@
 
 .navbar-background{
     background-color: var(--color3);
+    box-shadow: 0 10px 8px var(--color2);
     min-width: var(--min_width);
 }
 
@@ -233,6 +234,7 @@ h2{
     border-radius: 30pt;
     width: auto;
     max-width: 12cm;
+    box-shadow: 2px 10px 8px var(--color2);
 }
 
 
