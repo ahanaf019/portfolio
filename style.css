@@ -256,9 +256,15 @@ h2{
 .edu-item{
     display: flex;
     flex-direction: row;
-    width: auto;
+    width: 100%;
     max-width: var(--edu_max_width);
-    min-width: var(--edu_min_width);
+    min-width: var(--edu_max_width);
+    background-color: var(--color_card);
+    box-shadow: 0 4px 8px var(--color2);
+    border-radius: 15pt;
+    padding: 5pt;
+    margin-top: 5pt;
+    margin-bottom: 5pt;
 }
 
 .edu-image {
@@ -270,10 +276,10 @@ h2{
 .edu-degree{
     display: flex;
     /* margin: 0; */
-    /* flex-grow: 1; */
+    flex-grow: 1;
     flex-basis: 0;
-    width: auto;
-    max-width: var(--edu_max_width);
+    width: 100%;
+    /* max-width: var(--edu_max_width); */
     min-width: var(--edu_min_width);
 }
 
@@ -319,8 +325,8 @@ h2{
 .skill-image {
     border-radius: 20pt;
     padding: 10pt;
-    width: 120px;
-    /* height: 150px; */
+    width: auto;
+    max-height: 120px;
 }
 
 .skill-section{
@@ -350,9 +356,14 @@ h2{
 }
 
 .skill-item{
+    background-color: var(--color_card);
     display: flex;
     flex-direction: row;
     width: 12cm;
+    margin-top: 5pt;
+    margin-bottom: 5pt;
+    border-radius: 10pt;
+    box-shadow: 0 4px 8px var(--color2);
     /* max-width: var(--edu_max_width);
     min-width: var(--edu_min_width); */
 }
