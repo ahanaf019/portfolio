@@ -126,7 +126,7 @@ a:active {
 
 
 div{
-    /* border: 1pt solid  black; */
+    border: 1pt solid  black;
     margin: auto;
 }
 
@@ -301,6 +301,8 @@ h2{
     max-width: var(--edu_max_width);
     min-width: var(--edu_min_width);
     align-items: flex-start;
+    margin-left: 0;
+    width: 100%;
 }
 
 .edu-location{
