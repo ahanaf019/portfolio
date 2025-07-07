@@ -1,101 +1,153 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Md. Ahanaf Arif Khan - Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-black font-sans scroll-smooth">
+  <nav class="bg-gray-100 py-3 mb-10 shadow">
+    <div class="max-w-4xl mx-auto px-6 flex flex-wrap justify-between items-center text-sm font-medium">
+      <div class="flex space-x-4">
+        <a href="#projects" class="hover:text-blue-500">Projects</a>
+        <a href="#education" class="hover:text-blue-500">Education</a>
+        <a href="#skills" class="hover:text-blue-500">Skills</a>
+        <a href="#publications" class="hover:text-blue-500">Publications</a>
+        <a href="#honors" class="hover:text-blue-500">Honors</a>
+        <a href="#seminars" class="hover:text-blue-500">Seminars</a>
+        <a href="#certifications" class="hover:text-blue-500">Certifications</a>
+        <a href="#languages" class="hover:text-blue-500">Languages</a>
+      </div>
+      <div class="flex space-x-4 mt-2 md:mt-0">
+        <a href="resources/ahanaf019_cv_public.pdf" download class="hover:text-blue-500">Download CV</a>
+      </div>
+    </div>
+  </nav>
 
-    <head>
-        <title>Portfolio - Md. Ahanaf Arif Khan</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    
-    <body class="home-body">
+  <div class="max-w-4xl mx-auto px-6 py-4">
+    <header class="flex items-center space-x-6 mb-14">
+  <img src="resources/maak.jpg" alt="Profile" class="rounded-full w-24 h-24 object-cover border-2 border-gray-300" />
+  <div>
+    <h1 class="text-4xl font-bold">Md. Ahanaf Arif Khan</h1>
+    <p class="text-sm mt-2">📧 <a href="mailto:ahanaf019@gmail.com" class="underline hover:text-blue-500">ahanaf019@gmail.com</a></p>
+    <p class="text-sm">🌐 <a href="https://ahanaf019.github.io/portfolio" class="underline hover:text-blue-500">ahanaf019.github.io/portfolio</a> | GitHub: <a href="https://github.com/ahanaf019" class="underline hover:text-blue-500">@ahanaf019</a> | LinkedIn: <a href="https://www.linkedin.com/in/ahanaf019" class="underline hover:text-blue-500">@ahanaf019</a></p>
+  </div>
+</header>
 
-        <div class="home-placeholder-div">
+<section id="overview" class="mb-16">
+  <h2 class="text-2xl font-semibold border-b border-gray-300 pb-1 mb-3">Overview</h2>
+  <p class="text-sm">Aspiring researcher with a strong foundation in deep learning, computer vision, and model efficiency. Experienced in fine-grained classification, vision transformers, and contrastive learning. Built and deployed multiple end-to-end research prototypes and pipelines using modern Python frameworks. Passionate about making research reproducible and efficient for real-world AI deployment.</p>
+</section>
 
+    <section id="projects" class="mb-16">
+      <h2 class="text-2xl font-semibold border-b border-gray-300 pb-1 mb-3">Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+          <h3 class="text-lg font-bold">VisionDesk</h3>
+          <p class="text-sm">Real-time employee monitoring using YOLOv8, FastAPI, and manual annotations. <a href="https://github.com/mdhasnainali/VisionDesk" class="underline text-blue-500">[Code]</a></p>
         </div>
-
-        
-        
-        
-        
-        <div class="main-section" style="padding-top: 2cm;">
-            <div>
-                <img class="pro-pic-home" src="resources/photo.jpg" width="600" alt="">
-            </div>
-            
-            <div>
-                <div  class="home-title-div">
-                    <h4>Portfolio</h4>
-                    <h1>Md. Ahanaf Arif Khan</h1>
-                    <h3 class="tagline">AI Researcher | Artificial Intelligence | Deep Learning | Data Science Enthusiast</h3>
-                </div>
-                
-                
-                <div class="home-navbar-background">
-                    <div class="home-navbar">
-                        <!-- <div class="home-navbar-item-container">
-                            <a class="navbar-item home-link-color" href="index.html">Contact</a>
-                        </div> -->
-        
-                        <div class="navbar-item-container">
-                            <a class="navbar-item home-link-color" href="aboutme.html">About</a></li>
-                            
-                        </div>
-                        <div class="navbar-item-container">
-                            <a class="navbar-item home-link-color" href="education.html">Education</a>
-                        </div>
-                        <div class="navbar-item-container">
-                            <a class="navbar-item home-link-color" href="skills.html">Skills</a>
-                        </div>
-                        <div class="navbar-item-container">
-                            <a class="navbar-item home-link-color" href="projects.html">Projects</a>
-                        </div>
-                        <div class="navbar-item-container">
-                            <a class="navbar-item home-link-color" href="achievements.html">Achievements</a>
-                        </div>
-                    </div>
-                </div>
-                
-                
-                <div class="home-contact-div">
-                    <div class="home-container">
-                        <div class="contact-item">
-                            <a href="mailto:ahanaf019@gmail.com"><img src="https://cdn-icons-png.flaticon.com/512/281/281769.png" width="25"></a>
-                        </div>
-        
-                        <div class="contact-item">
-                            <a href="https://www.github.com/ahanaf019"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" width="25"></a>
-                        </div>
-        
-                        <div class="contact-item">
-                            <a href="https://www.linkedin.com/in/ahanaf019/"><img src="https://images.rawpixel.com/image_png_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjk4Mi1kNS0xMF8xLnBuZw.png" width="25" alt=""></a>
-                        </div>
-        
-                        <div class="contact-item">
-                            <a href="https://www.kaggle.com/mdahanafarifkhan"><img src="https://www.kaggle.com/static/images/site-logo.svg" width="65" alt=""></a>
-            
-                        </div>
-                        <div class="contact-item">
-                            <a href="https://www.facebook.com/ahanaf019/"><img src="https://static-00.iconduck.com/assets.00/facebook-icon-512x512-seb542ju.png" width="25" alt=""></a>
-            
-                        </div>
-                    </div>
-        
-                </div>
-
-            </div>
+        <div>
+          <h3 class="text-lg font-bold">Vision Transformer (ViT)</h3>
+          <p class="text-sm">ViT from scratch with patch embedding, attention visualization. <a href="https://github.com/ahanaf019/Vision-Transformer-From-Scratch" class="underline text-blue-500">[Code]</a></p>
         </div>
+        <div>
+          <h3 class="text-lg font-bold">Swin Transformer</h3>
+          <p class="text-sm">Implemented window-based attention with shift and benchmarked classification gains.</p>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold">CutMix & MixUp</h3>
+          <p class="text-sm">Data augmentation via mixing inputs/labels in PyTorch. <a href="https://github.com/ahanaf019/CutMix-MixUp-Implementation-Pytorch" class="underline text-blue-500">[Code]</a></p>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold">Knowledge Distillation</h3>
+          <p class="text-sm">ResNet50 → MobileNetV3 on STL-10 using tuned soft-label training. <a href="https://github.com/ahanaf019/Knowledge-Distillation-Pytorch" class="underline text-blue-500">[Code]</a></p>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold">SimCLR</h3>
+          <p class="text-sm">Self-supervised contrastive learning with projection heads. <a href="https://github.com/ahanaf019/SimCLR-Implementation-Pytorch" class="underline text-blue-500">[Code]</a></p>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold">U-Net Segmentation</h3>
+          <p class="text-sm">Segmentation with U-Net/ResNet encoders, modular design. <a href="https://github.com/ahanaf019/PyTorch-Semantic-Segmentaion" class="underline text-blue-500">[Code]</a></p>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold">Conditional GAN</h3>
+          <p class="text-sm">MNIST digit generation using label-conditional GAN in Keras. <a href="https://github.com/ahanaf019/CGAN-Keras" class="underline text-blue-500">[Code]</a></p>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold">Flower Classification</h3>
+          <p class="text-sm">CNNs and transfer learning on flower species dataset. <a href="https://github.com/ahanaf019/Flower-Classification-Using-NN" class="underline text-blue-500">[Code]</a></p>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold">Flood Segmentation</h3>
+          <p class="text-sm">Segmented satellite flood imagery using U-Net. <a href="https://github.com/ahanaf019/Flood-Segmentation" class="underline text-blue-500">[Code]</a></p>
+        </div>
+      </div>
+    </section>
 
+    <section id="education" class="mb-16">
+  <h2 class="text-2xl font-semibold border-b border-gray-300 pb-1 mb-3">Education</h2>
+  <ul class="list-disc list-inside space-y-1">
+    <li><strong>B.Sc. in CSE</strong> - University of Rajshahi (2024), CGPA: 3.90/4.00</li>
+    <li>Higher Secondary Certificate - Rajshahi College (2018), GPA: 5.00/5.00</li>
+    <li>Secondary School Certificate - Govt. Laboratory High School (2016), GPA: 5.00/5.00</li>
+  </ul>
+</section>
 
+<section id="skills" class="mb-16">
+  <h2 class="text-2xl font-semibold border-b border-gray-300 pb-1 mb-3">Skills</h2>
+  <ul class="list-disc list-inside grid grid-cols-2 gap-x-4">
+    <li>Deep Learning, Vision Transformers</li>
+    <li>Contrastive Learning, Signal Processing</li>
+    <li>Python, C/C++, Java, JavaScript</li>
+    <li>PyTorch, TensorFlow, Huggingface</li>
+    <li>Flask, FastAPI, REST APIs</li>
+    <li>MySQL, MongoDB, SQLite</li>
+    <li>OpenCV, NumPy, Pandas, scikit-learn</li>
+    <li>Git, GitHub, Jupyter, LaTeX, Linux</li>
+  </ul>
+</section>
 
+<section id="publications" class="mb-16">
+  <h2 class="text-2xl font-semibold border-b border-gray-300 pb-1 mb-3">Publications</h2>
+  <p>[C.1] Md. Ahanaf Arif Khan et al. (2023). "Competency Comparison of Deep Neural Networks for Identifying Gender in Color Fundus Photographs". In <em>26th ICCIT</em>, IEEE. <a href="https://doi.org/10.1109/ICCIT60459.2023.10441623" class="underline text-blue-500">DOI</a></p>
+</section>
 
-        
+<section id="honors" class="mb-16">
+  <h2 class="text-2xl font-semibold border-b border-gray-300 pb-1 mb-3">Honors & Awards</h2>
+  <ul class="list-disc list-inside">
+    <li><strong>UGC Stipend 2025:</strong> Highest academic distinction in Faculty of Engineering</li>
+    <li><strong>AI Hackathon Champion (2025):</strong> VisionDesk developed during manufacturing track</li>
+    <li><strong>Robi Datathon Finalist (2024):</strong> Top 7 out of 1000 teams in ML business challenge</li>
+    <li><strong>Dean's Award (2023):</strong> Twice recognized for academic performance</li>
+  </ul>
+</section>
 
-        <!-- <div class="footer">
-            <div class="copyright">
-                © 2024 Md. Ahanaf Arif Khan. All rights reserved.
-            </div>
-        </div> -->
+<section id="seminars" class="mb-16">
+  <h2 class="text-2xl font-semibold border-b border-gray-300 pb-1 mb-3">Seminars & Workshops</h2>
+  <ul class="list-disc list-inside">
+    <li><strong>Bangladesh AI Summit (2025):</strong> Hosted by Bangladesh Innovation Conclave</li>
+    <li><strong>IC4ME2 Poster Presentations (2021 & 2022):</strong> Presented work at University of Rajshahi</li>
+  </ul>
+</section>
 
+<section id="certifications" class="mb-16">
+  <h2 class="text-2xl font-semibold border-b border-gray-300 pb-1 mb-3">Certifications</h2>
+  <ul class="list-disc list-inside">
+    <li><strong>Python Data Associate (Feb 2025):</strong> Issued by DataCamp <a href="https://www.datacamp.com/certificate/PDA0012839803897" class="underline text-blue-500">[Verify]</a></li>
+  </ul>
+</section>
 
-    </body>
-    
+<section id="languages" class="mb-16">
+  <h2 class="text-2xl font-semibold border-b border-gray-300 pb-1 mb-3">Languages & Interests</h2>
+  <p><strong>Languages:</strong> Bengali (Native), English (Professional Proficiency)</p>
+  <p><strong>Interests:</strong> Traveling, Watching Movies, Exploring new ideas and technologies</p>
+</section>
+
+<footer class="mt-12 text-sm text-center text-gray-500">
+  <p>&copy; 2025 Md. Ahanaf Arif Khan | Built with Tailwind CSS</p>
+</footer>
+  </div>
+</body>
 </html>
