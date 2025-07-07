@@ -7,23 +7,38 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-white text-black font-sans scroll-smooth">
-  <nav class="bg-gray-100 py-3 mb-10 shadow">
-    <div class="max-w-4xl mx-auto px-6 flex flex-wrap justify-between items-center text-sm font-medium">
-      <div class="flex space-x-4">
-        <a href="#projects" class="hover:text-blue-500">Projects</a>
-        <a href="#education" class="hover:text-blue-500">Education</a>
-        <a href="#skills" class="hover:text-blue-500">Skills</a>
-        <a href="#publications" class="hover:text-blue-500">Publications</a>
-        <a href="#honors" class="hover:text-blue-500">Honors</a>
-        <a href="#seminars" class="hover:text-blue-500">Seminars</a>
-        <a href="#certifications" class="hover:text-blue-500">Certifications</a>
-        <a href="#languages" class="hover:text-blue-500">Languages</a>
-      </div>
-      <div class="flex space-x-4 mt-2 md:mt-0">
-        <a href="resources/ahanaf019_cv_public.pdf" download class="hover:text-blue-500">Download CV</a>
+  <!-- Sticky & Mobile-Friendly Navbar -->
+<nav class="bg-gray-100 shadow sticky top-0 z-50">
+  <div class="max-w-4xl mx-auto px-6 py-3 flex items-center justify-between flex-wrap">
+    
+    <!-- Logo / Title -->
+    <div class="text-sm font-semibold">Portfolio</div>
+
+    <!-- Hamburger Button (mobile only) -->
+    <button id="menu-toggle" class="md:hidden text-black focus:outline-none">
+      <svg class="h-6 w-6 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" />
+      </svg>
+    </button>
+
+    <!-- Menu Items -->
+    <div id="menu" class="w-full md:flex md:items-center md:w-auto hidden mt-3 md:mt-0">
+      <div class="flex flex-col md:flex-row md:space-x-4 text-sm font-medium">
+        <a href="#projects" class="hover:text-blue-500 py-1">Projects</a>
+        <a href="#education" class="hover:text-blue-500 py-1">Education</a>
+        <a href="#skills" class="hover:text-blue-500 py-1">Skills</a>
+        <a href="#publications" class="hover:text-blue-500 py-1">Publications</a>
+        <a href="#honors" class="hover:text-blue-500 py-1">Honors</a>
+        <a href="#seminars" class="hover:text-blue-500 py-1">Seminars</a>
+        <a href="#certifications" class="hover:text-blue-500 py-1">Certifications</a>
+        <a href="#languages" class="hover:text-blue-500 py-1">Languages</a>
+        <a href="resources/ahanaf019_cv_public.pdf" download class="hover:text-blue-500 py-1">Download CV</a>
       </div>
     </div>
-  </nav>
+  </div>
+</nav>
+
+
 
   <div class="max-w-4xl mx-auto px-6 py-4">
     <header class="flex items-center space-x-6 mb-14">
@@ -150,4 +165,15 @@
 </footer>
   </div>
 </body>
+
+<!-- Toggle Script -->
+<script>
+  const toggleBtn = document.getElementById("menu-toggle");
+  const menu = document.getElementById("menu");
+
+  toggleBtn.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+  });
+</script>
+
 </html>
