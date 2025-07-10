@@ -33,10 +33,10 @@
           <a href="#education" class="hover:text-blue-500 py-2">Education</a>
           <a href="#skills" class="hover:text-blue-500 py-2">Skills</a>
           <a href="#publications" class="hover:text-blue-500 py-2">Publications</a>
-          <a href="#honors" class="hover:text-blue-500 py-2">Awards</a>
+          <a href="#awards" class="hover:text-blue-500 py-2">Awards</a>
           <a href="#seminars" class="hover:text-blue-500 py-2">Seminars</a>
           <a href="#certifications" class="hover:text-blue-500 py-2">Certifications</a>
-          <a href="#languages" class="hover:text-blue-500 py-2">Others</a>
+          <a href="#others" class="hover:text-blue-500 py-2">Others</a>
           <a href="resources/ahanaf019_cv_public.pdf" download class="bg-blue-600 text-white px-5 py-3 rounded font-bold hover:bg-blue-700 transition max-w-max md:inline-block">Download CV</a>
         </div>
       </div>
@@ -47,38 +47,37 @@
   
   <div class="max-w-4xl mx-auto px-6 py-4">
     
-    <header class="flex items-center space-x-6 mb-14">
-      <img src="resources/maak.jpg" alt="Profile" class="rounded-full w-32 h-32 object-cover border-2 border-gray-300" />
+    <header class="flex flex-col sm:flex-row items-center sm:items-start space-y-6 sm:space-y-0 sm:space-x-6 mb-14 text-center sm:text-left">
+      <!-- Enlarged image for mobile -->
+      <img src="resources/maak.jpg" alt="Profile" class="rounded-full w-36 h-36 sm:w-32 sm:h-32 object-cover border-2 border-gray-300" />
+      
       <div class="leading-relaxed">
-        <h1 class="text-5xl font-bold">Md. Ahanaf Arif Khan</h1>
+        <h1 class="text-4xl sm:text-5xl font-bold">Md. Ahanaf Arif Khan</h1>
         
-        <!-- Location line (used to be email) -->
-        <p class="text-xl mt-3 flex items-center space-x-2 text-gray-700">
-          <i class="fas fa-location-dot text-gray-600 text-xl"></i>
+        <!-- Location -->
+        <p class="text-lg mt-3 flex items-center justify-center sm:justify-start space-x-2 text-gray-700">
+          <i class="fas fa-location-dot text-gray-600 text-lg"></i>
           <span>Rajshahi, Bangladesh</span>
         </p>
         
-        <!-- Email + GitHub + LinkedIn + Portfolio -->
-        <p class="text-base mt-2 flex flex-col sm:flex-row sm:items-center sm:space-x-4 text-gray-700">
-          <span class="flex items-center space-x-2 mt-1">
+        <!-- Links: made horizontal with wrap and gap -->
+        <div class="text-base mt-3 flex flex-wrap justify-center sm:justify-start gap-x-4 gap-y-2 text-gray-700">
+          <span class="flex items-center space-x-2">
             <i class="fas fa-envelope text-gray-600"></i>
             <a href="mailto:ahanaf019@gmail.com" class="underline hover:text-blue-500">ahanaf019@gmail.com</a>
           </span>
-          <span class="flex items-center space-x-2 mt-1">
+          <span class="flex items-center space-x-2">
             <i class="fab fa-github text-gray-600"></i>
             <a href="https://github.com/ahanaf019" class="underline hover:text-blue-500">@ahanaf019</a>
           </span>
-          <span class="flex items-center space-x-2 mt-1">
+          <span class="flex items-center space-x-2">
             <i class="fab fa-linkedin text-gray-600"></i>
             <a href="https://www.linkedin.com/in/ahanaf019" class="underline hover:text-blue-500">@ahanaf019</a>
           </span>
-          <span class="flex items-center space-x-2 mt-1">
-            <i class="fas fa-globe text-gray-600"></i>
-            <a href="https://ahanaf019.github.io/portfolio" class="underline hover:text-blue-500">Portfolio</a>
-          </span>
-        </p>
+        </div>
       </div>
     </header>
+    
     
     <section id="overview" class="mb-16 scroll-mt-24" style="text-align: justify;">
       <h2 class="text-2xl font-semibold border-b border-gray-300 pb-1 mb-3">Overview</h2>
@@ -99,93 +98,115 @@
       </p>
     </section>
     
-    <section id="projects" class="mb-16 scroll-mt-24" style="text-align: justify;">
-      <h2 class="text-2xl font-semibold border-b border-gray-300 pb-1 mb-3">Projects</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6">
-        <div>
-          <h3 class="text-lg font-bold mb-1">VisionDesk</h3>
-          <p class="text-lg leading-relaxed text-gray-700">
-            Real-time employee monitoring using <span class="font-medium">YOLOv8</span>, <span class="font-medium">FastAPI</span>, and manual annotations. 
+    <section id="projects" class="mb-16 scroll-mt-24">
+      <h2 class="text-2xl font-semibold border-b border-gray-300 pb-1 mb-5">Projects</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Card Template -->
+        <div class="border border-gray-300 rounded-md p-4 bg-white">
+          <h3 class="text-lg font-bold mb-2">VisionDesk</h3>
+          <p class="text-base leading-relaxed text-gray-700">
+            Real-time employee monitoring using <span class="font-medium">YOLOv8</span>, <span class="font-medium">FastAPI</span>, and manual annotations.
             <a href="https://github.com/mdhasnainali/VisionDesk" class="underline text-blue-500">[Code]</a>
           </p>
         </div>
-        <div>
-          <h3 class="text-lg font-bold mb-1">Vision Transformer (ViT)</h3>
-          <p class="text-lg leading-relaxed text-gray-700">
-            ViT from scratch with patch embedding, attention visualization. 
+        
+        <div class="border border-gray-300 rounded-md p-4 bg-white">
+          <h3 class="text-lg font-bold mb-2">Vision Transformer (ViT)</h3>
+          <p class="text-base leading-relaxed text-gray-700">
+            ViT from scratch with patch embedding, attention visualization.
             <a href="https://github.com/ahanaf019/Vision-Transformer-From-Scratch" class="underline text-blue-500">[Code]</a>
           </p>
         </div>
-        <div>
-          <h3 class="text-lg font-bold mb-1">Swin Transformer</h3>
-          <p class="text-lg leading-relaxed text-gray-700">
+        
+        <div class="border border-gray-300 rounded-md p-4 bg-white">
+          <h3 class="text-lg font-bold mb-2">Swin Transformer</h3>
+          <p class="text-base leading-relaxed text-gray-700">
             Implemented window-based attention with shift and benchmarked classification gains.
           </p>
         </div>
-        <div>
-          <h3 class="text-lg font-bold mb-1">CutMix & MixUp</h3>
-          <p class="text-lg leading-relaxed text-gray-700">
-            Data augmentation via mixing inputs/labels in PyTorch. 
+        
+        <div class="border border-gray-300 rounded-md p-4 bg-white">
+          <h3 class="text-lg font-bold mb-2">CutMix & MixUp</h3>
+          <p class="text-base leading-relaxed text-gray-700">
+            Data augmentation via mixing inputs/labels in PyTorch.
             <a href="https://github.com/ahanaf019/CutMix-MixUp-Implementation-Pytorch" class="underline text-blue-500">[Code]</a>
           </p>
         </div>
-        <div>
-          <h3 class="text-lg font-bold mb-1">Knowledge Distillation</h3>
-          <p class="text-lg leading-relaxed text-gray-700">
-            ResNet50 → MobileNetV3 on STL-10 using tuned soft-label training. 
+        
+        <div class="border border-gray-300 rounded-md p-4 bg-white">
+          <h3 class="text-lg font-bold mb-2">Knowledge Distillation</h3>
+          <p class="text-base leading-relaxed text-gray-700">
+            ResNet50 → MobileNetV3 on STL-10 using tuned soft-label training.
             <a href="https://github.com/ahanaf019/Knowledge-Distillation-Pytorch" class="underline text-blue-500">[Code]</a>
           </p>
         </div>
-        <div>
-          <h3 class="text-lg font-bold mb-1">SimCLR</h3>
-          <p class="text-lg leading-relaxed text-gray-700">
-            Self-supervised contrastive learning with projection heads. 
+        
+        <div class="border border-gray-300 rounded-md p-4 bg-white">
+          <h3 class="text-lg font-bold mb-2">SimCLR</h3>
+          <p class="text-base leading-relaxed text-gray-700">
+            Self-supervised contrastive learning with projection heads.
             <a href="https://github.com/ahanaf019/SimCLR-Implementation-Pytorch" class="underline text-blue-500">[Code]</a>
           </p>
         </div>
-        <div>
-          <h3 class="text-lg font-bold mb-1">U-Net Segmentation</h3>
-          <p class="text-lg leading-relaxed text-gray-700">
-            Segmentation with U-Net/ResNet encoders, modular design. 
+        
+        <div class="border border-gray-300 rounded-md p-4 bg-white">
+          <h3 class="text-lg font-bold mb-2">U-Net Segmentation</h3>
+          <p class="text-base leading-relaxed text-gray-700">
+            Segmentation with U-Net/ResNet encoders, modular design.
             <a href="https://github.com/ahanaf019/PyTorch-Semantic-Segmentaion" class="underline text-blue-500">[Code]</a>
           </p>
         </div>
-        <div>
-          <h3 class="text-lg font-bold mb-1">Conditional GAN</h3>
-          <p class="text-lg leading-relaxed text-gray-700">
-            MNIST digit generation using label-conditional GAN in Keras. 
+        
+        <div class="border border-gray-300 rounded-md p-4 bg-white">
+          <h3 class="text-lg font-bold mb-2">Conditional GAN</h3>
+          <p class="text-base leading-relaxed text-gray-700">
+            MNIST digit generation using label-conditional GAN in Keras.
             <a href="https://github.com/ahanaf019/CGAN-Keras" class="underline text-blue-500">[Code]</a>
           </p>
         </div>
-        <div>
-          <h3 class="text-lg font-bold mb-1">Flower Classification</h3>
-          <p class="text-lg leading-relaxed text-gray-700">
-            CNNs and transfer learning on flower species dataset. 
+        
+        <div class="border border-gray-300 rounded-md p-4 bg-white">
+          <h3 class="text-lg font-bold mb-2">Flower Classification</h3>
+          <p class="text-base leading-relaxed text-gray-700">
+            CNNs and transfer learning on flower species dataset.
             <a href="https://github.com/ahanaf019/Flower-Classification-Using-NN" class="underline text-blue-500">[Code]</a>
           </p>
         </div>
-        <div>
-          <h3 class="text-lg font-bold mb-1">Flood Segmentation</h3>
-          <p class="text-lg leading-relaxed text-gray-700">
-            Segmented satellite flood imagery using U-Net. 
+        
+        <div class="border border-gray-300 rounded-md p-4 bg-white">
+          <h3 class="text-lg font-bold mb-2">Flood Segmentation</h3>
+          <p class="text-base leading-relaxed text-gray-700">
+            Segmented satellite flood imagery using U-Net.
             <a href="https://github.com/ahanaf019/Flood-Segmentation" class="underline text-blue-500">[Code]</a>
           </p>
         </div>
       </div>
     </section>
     
+    
     <section id="education" class="mb-16 scroll-mt-24" style="text-align: justify;">
       <h2 class="text-2xl font-semibold border-b border-gray-300 pb-1 mb-3">Education</h2>
-      <ul class="list-disc list-inside text-lg leading-relaxed text-gray-700 space-y-2">
-        <li><strong>B.Sc. in CSE</strong> - University of Rajshahi (2024), CGPA: 3.90/4.00</li>
-        <li>Higher Secondary Certificate - Rajshahi College (2018), GPA: 5.00/5.00</li>
-        <li>Secondary School Certificate - Govt. Laboratory High School (2016), GPA: 5.00/5.00</li>
+      <ul class="space-y-4 text-lg leading-relaxed text-gray-700">
+        <li class="flex items-start space-x-3">
+          <i class="fas fa-graduation-cap text-blue-600 mt-1"></i>
+          <span><strong>B.Sc. in CSE</strong> – University of Rajshahi (2024), CGPA: 3.90/4.00</span>
+        </li>
+        <li class="flex items-start space-x-3">
+          <i class="fas fa-school text-blue-600 mt-1"></i>
+          <span>Higher Secondary Certificate – Rajshahi College (2018), GPA: 5.00/5.00</span>
+        </li>
+        <li class="flex items-start space-x-3">
+          <i class="fas fa-book-open text-blue-600 mt-1"></i>
+          <span>Secondary School Certificate – Govt. Laboratory High School (2016), GPA: 5.00/5.00</span>
+        </li>
       </ul>
     </section>
     
+    <!-- Skills Section (optimized) -->
     <section id="skills" class="mb-16 scroll-mt-24" style="text-align: justify;">
       <h2 class="text-2xl font-semibold border-b border-gray-300 pb-1 mb-3">Skills</h2>
-      <ul class="list-disc list-inside grid grid-cols-2 gap-x-4 text-lg leading-relaxed text-gray-700">
+      <ul class="list-disc list-inside grid grid-cols-1 sm:grid-cols-2 gap-y-3 gap-x-4 text-lg leading-relaxed text-gray-700">
         <li>Deep Learning, Vision Transformers</li>
         <li>Contrastive Learning, Signal Processing</li>
         <li>Python, C/C++, Java, JavaScript</li>
@@ -205,42 +226,93 @@
       </p>
     </section>
     
-    <section id="honors" class="mb-16 scroll-mt-24" style="text-align: justify;">
-      <h2 class="text-2xl font-semibold border-b border-gray-300 pb-1 mb-3">Awards & Achievements</h2>
-      <ul class="list-disc list-inside text-lg leading-relaxed text-gray-700 space-y-2">
-        <li><strong>UGC Stipend 2025:</strong> Highest academic distinction in Faculty of Engineering</li>
-        <li><strong>AI Hackathon Champion (2025):</strong> VisionDesk developed during manufacturing track</li>
-        <li><strong>Robi Datathon Finalist (2024):</strong> Top 7 out of 1000 teams in ML business challenge</li>
-        <li><strong>Dean's Award (2023):</strong> Twice recognized for academic performance</li>
-      </ul>
+    <section id="awards" class="mb-16 scroll-mt-24">
+      <h2 class="text-2xl font-semibold border-b border-gray-300 pb-1 mb-5">Awards & Achievements</h2>
+      
+      <div class="space-y-4">
+        <div class="border border-gray-300 rounded-md p-4 bg-white">
+          <p class="text-base sm:text-lg leading-relaxed text-gray-700">
+            <span class="font-semibold text-gray-900">UGC Stipend 2025:</span>
+            Highest academic distinction in Faculty of Engineering
+          </p>
+        </div>
+        
+        <div class="border border-gray-300 rounded-md p-4 bg-white">
+          <p class="text-base sm:text-lg leading-relaxed text-gray-700">
+            <span class="font-semibold text-gray-900">AI Hackathon Champion (2025):</span>
+            VisionDesk developed during manufacturing track
+          </p>
+        </div>
+        
+        <div class="border border-gray-300 rounded-md p-4 bg-white">
+          <p class="text-base sm:text-lg leading-relaxed text-gray-700">
+            <span class="font-semibold text-gray-900">Robi Datathon Finalist (2024):</span>
+            Top 7 out of 1000 teams in ML business challenge
+          </p>
+        </div>
+        
+        <div class="border border-gray-300 rounded-md p-4 bg-white">
+          <p class="text-base sm:text-lg leading-relaxed text-gray-700">
+            <span class="font-semibold text-gray-900">Dean's Award (2023):</span>
+            Twice recognized for academic performance
+          </p>
+        </div>
+      </div>
     </section>
+    
+    
     
     <section id="seminars" class="mb-16 scroll-mt-24" style="text-align: justify;">
       <h2 class="text-2xl font-semibold border-b border-gray-300 pb-1 mb-3">Seminars & Workshops</h2>
-      <ul class="list-disc list-inside text-lg leading-relaxed text-gray-700 space-y-2">
-        <li><strong>Bangladesh AI Summit (2025):</strong> Hosted by Bangladesh Innovation Conclave</li>
-        <li><strong>IC4ME2 Poster Presentations (2021 & 2022):</strong> Presented work at University of Rajshahi</li>
+      <ul class="space-y-4 text-lg leading-relaxed text-gray-700">
+        <li class="inline-flex items-start space-x-3">
+          <i class="fas fa-circle text-blue-600 mt-1 min-w-[1rem] text-sm"></i>
+          <span><strong>Bangladesh AI Summit (2025):</strong> Hosted by Bangladesh Innovation Conclave</span>
+        </li>
+        <li class="inline-flex items-start space-x-3">
+          <i class="fas fa-circle text-blue-600 mt-1 min-w-[1rem] text-sm"></i>
+          <span><strong>IC4ME2 Poster Presentations (2021 & 2022):</strong> Presented work at University of Rajshahi</span>
+        </li>
       </ul>
     </section>
     
     <section id="certifications" class="mb-16 scroll-mt-24" style="text-align: justify;">
       <h2 class="text-2xl font-semibold border-b border-gray-300 pb-1 mb-3">Certifications</h2>
-      <ul class="list-disc list-inside text-lg leading-relaxed text-gray-700 space-y-2">
-        <li><strong>Python Data Associate (Feb 2025):</strong> Issued by DataCamp 
-          <a href="https://www.datacamp.com/certificate/PDA0012839803897" class="underline text-blue-500">[Verify]</a>
+      <ul class="space-y-4 text-lg leading-relaxed text-gray-700">
+        <li class="inline-flex items-start space-x-3">
+          <i class="fas fa-circle text-blue-600 mt-1 min-w-[1rem] text-sm"></i>
+          <span>
+            <strong>Python Data Associate (Feb 2025):</strong> Issued by DataCamp 
+            <a href="https://www.datacamp.com/certificate/PDA0012839803897" class="underline text-blue-500">[Verify]</a>
+          </span>
         </li>
       </ul>
     </section>
     
-    <section id="languages" class="mb-16 scroll-mt-24" style="text-align: justify;">
+    <section id="others" class="mb-16 scroll-mt-24" style="text-align: justify;">
       <h2 class="text-2xl font-semibold border-b border-gray-300 pb-1 mb-3">Additional Information</h2>
-      <p class="text-lg leading-relaxed text-gray-700"><strong>Languages:</strong> Bengali (Native), English (Professional Proficiency)</p>
-      <p class="text-lg leading-relaxed text-gray-700"><strong>Interests:</strong> Traveling, Watching Movies, Exploring new ideas and technologies</p>
+      <ul class="space-y-4 text-lg leading-relaxed text-gray-700">
+        <li class="inline-flex items-start space-x-3">
+          <i class="fas fa-circle text-blue-600 mt-1 min-w-[1rem] text-sm"></i>
+          <span><strong>Languages:</strong> Bengali (Native), English (Professional Proficiency)</span>
+        </li>
+        <li class="inline-flex items-start space-x-3">
+          <i class="fas fa-circle text-blue-600 mt-1 min-w-[1rem] text-sm"></i>
+          <span><strong>Interests:</strong> Traveling, Watching Movies, Exploring new ideas and technologies</span>
+        </li>
+      </ul>
     </section>
     
     
-    <footer class="mt-12 text-sm text-center text-gray-500">
-      <p>&copy; 2025 Md. Ahanaf Arif Khan | Built with Tailwind CSS</p>
+    
+    
+    <footer class="mt-12 py-6 text-center text-gray-600 text-sm font-light">
+      <p>
+        &copy; 2025 Md. Ahanaf Arif Khan &nbsp;&middot;&nbsp; 
+        <a href="https://tailwindcss.com" target="_blank" rel="noopener" class="text-blue-600 hover:underline">
+          Built with Tailwind CSS
+        </a>
+      </p>
     </footer>
   </div>
 </body>
